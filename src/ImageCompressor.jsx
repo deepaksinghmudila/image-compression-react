@@ -45,7 +45,7 @@ export default class imageCompressor extends React.Component {
     }
 
     let output;
-    imageCompression(this.state.originalImage, options).then((x) => {
+    imageCompression(this.state.originalImage, options).then( (x) => {
       output = x;
 
       const downloadLink = URL.createObjectURL(output);
@@ -83,10 +83,10 @@ export default class imageCompressor extends React.Component {
                 src="http://navparivartan.in/wp-content/uploads/2018/11/placeholder.png"
               ></Card.Img>
             )}
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center ">
               <input
                 type="file"
-                accept="image/*"
+                accept="image/*"                 
                 className="mt-2 btn btn-dark w-75"
                 onChange={(e) => this.handle(e)}
               />
